@@ -4,8 +4,8 @@
 }
 
 body{
-    margin: 0;
-    background-image: repeating-linear-gradient(to bottom right, #ffefb4, #ffd5ce, #ffb6ec  );
+    background-image: repeating-linear-gradient(to bottom right, #ffefb4, #ffd5ce, #ffb6ec );
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -13,6 +13,7 @@ h1{
     letter-spacing: 3px;
     margin-top: 7rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2rem;
 }
 
 i{
@@ -24,7 +25,7 @@ nav{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 nav ul{
@@ -32,6 +33,7 @@ nav ul{
     display: flex;
     justify-content: space-around;
     padding: 0 5rem; 
+    flex-wrap: wrap;    
 }
 
 nav ul li{
@@ -39,12 +41,17 @@ nav ul li{
 }
 
 nav ul li a{
-    display: block;
+    display: flex;
     color: black;
     padding: 14px 20px;
 }
 
-.main-container{
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container{
     height: 100%;
     width: 100%;
     display: flex;
@@ -54,15 +61,6 @@ nav ul li a{
 .lorem1{
     width: 50%;
     padding: 2em;
-}
-
-.inner-lorem{
-    margin: 3em;
-    height: 80%;
-}
-
-.inner-lorem h1 {
-    padding-bottom: 1.5em;
 }
 
 p{
@@ -89,7 +87,7 @@ p{
     cursor: pointer;
 }
 
-.main-resto-container{
+.secondary-container{
     display: flex;
     height: 675px;
     width: 100%;
@@ -98,7 +96,7 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.resto-container1{
+.sub-container1{
     height: 400px;
     width: 240px;
     margin-left: 3%;
@@ -113,7 +111,7 @@ p{
 #i{
     margin-top: 5px;
 }
-.resto-container2{
+.sub-container2{
     margin-left: 18px;
     height: 400px;
     width: 240px;
@@ -125,7 +123,7 @@ p{
     object-fit: cover;
 }
 
-.content{
+.sub-container3{
     position: relative;
     bottom: 25px;
     right: 15px;
