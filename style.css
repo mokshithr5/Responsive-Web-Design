@@ -50,7 +50,6 @@ nav ul li a{
 }
 
 .container{
-    width: 100%;
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -61,7 +60,7 @@ nav ul li a{
 }
 
 .hero-content{
-    font-size: 2.8vh;
+    font-size: 1.5vmax;
     padding-bottom: 3em;
 }
 
@@ -124,15 +123,16 @@ nav ul li a{
 
 .cont{
     background-color: #ff7171;
-    padding: 2vmax;
-    width: 50%;
+    padding: 4vmax;
 }
 
-h6{
+.h66{
     font-weight: lighter;
-    font-size: 1.5vw;
+    font-size: 2.5vh;
+    margin-bottom: 0.5em;
 }
 
 #mid-title{
     font-size: 4vh;
+    margin-bottom: 0.5em;
 }
